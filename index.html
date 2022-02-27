@@ -1,145 +1,331 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Portfolio</title>
-    <!-- css files -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portfolio Rahel Schneider</title>
+  <meta name="description" content="Portfolio Template for Developer" />
 
-    <!-- <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-    <meta name="author" content="Hassan Ali">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="nav container">
-        <!-- This "nav-menu" is hidden on mobile -->
-        <!-- Add the modifier "is-active" to display it on mobile -->
-        <!-- <div class="nav-left">
-            <a href="http://medium.com/@hassanhelfi/" class="nav-item">
-                <span class="icon">
-                    <i class="fa fa-medium"></i>
-                </span>
-            </a>
-            <a href="http://github.com/helfi92" class="nav-item">
-                <span class="icon">
-                    <i class="fa fa-github"></i>
-                </span>
-            </a>
-            <a href="https://twitter.com/hassanhelfi" class="nav-item">
-                <span class="icon">
-                    <i class="fa fa-twitter"></i>
-                </span>
-            </a>
-        </div> -->
-
-        <div class="nav-right nav-menu">
-            <a class="nav-item" href="#about">About</a>
-            <a class="nav-item" href="#projects">Projects</a>
-            <!-- <a class="nav-item" href="#social">Social</a> -->
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets/png/profile.png" alt="Rahel Schneider Image" class="header__logo-img" />
         </div>
+        <span class="header__logo-sub">Rahel Schneider</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html" class="header__link"> Start </a>
+          </li>
+          <!-- <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About </a>
+          </li> -->
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">
+              Projekte
+            </a>
+          </li>
+          <!-- <li class="header__link-wrapper">
+            <a href="./index.html#contact" class="header__link"> Contact </a>
+          </li> -->
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Start </a>
+          </li>
 
-        <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-        <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-        <span class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+          <!-- <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li> -->
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projekte </a>
+          </li>
+
+          <!-- <li class="header__sm-menu-link">
+            <a href="./index.html#contact"> Contact </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary">Hi, ich bin Rahel Schneider!</h1>
+      <div class="home-hero__info">
+        <p class="text-primary">
+          Ich studiere Mensch-Computer-Systeme an der Universität Würzburg. Aktuell
+          bin ich im 5. Fachsemester.
+          Falls Du Dich fragst, womit ich mich während meines Studiums beschäftige schau Dir gerne meine Projekte
+          an!
+        </p>
+      </div>
+      <div class="home-hero__cta">
+        <a href="./#projects" class="btn btn--bg">Projekte</a>
+      </div>
+    </div>
+    <!-- <div class="home-hero__socials">
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/twitter-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/yt-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
+          <img src="./assets/png/insta-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+    </div> -->
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
+    </div>
+  </section>
+  <!-- <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+          tempora explicabo quae quod deserunt eius sapiente
         </span>
-    </nav>
-
-    <!-- About Me -->
-    <section id="about" class="section section-1">
-        <div class="container has-text-centered">
-            <!-- Source: https://flic.kr/p/pAZBNK -->
-            <img class="avatar" src="assets/img/profile.png">
-        </div>
-        <div class="container"></br>
-            <p class="intro">
-                Lorem Khaled Ipsum is a major key to success. To succeed you must believe. When you believe, you will
-                succeed. Mogul talk. Find peace, life is like a water fall, you’ve gotta flow. Lion! Fan luv. Eliptical
-                talk.
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Get to know me!</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+              Hey! It's
+              <strong>John Doe</strong>
+              and I'm a <strong> Frontend Web Developer </strong> located in
+              Los Angeles. I've done
+              <strong> remote </strong>
+              projects for agencies, consulted for startups, and collaborated
+              with talented people to create
+              <strong>digital products </strong>
+              for both business and consumer use.
             </p>
+            <p class="about__content-details-para">
+              I'm a bit of a digital product junky. Over the years, I've used
+              hundreds of web and mobile apps in different industries and
+              verticals. Feel free to
+              <strong>contact</strong> me here.
+            </p>
+          </div>
+          <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
         </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section section-2">
-        <div class="container">
-            <div class="has-text-centered">
-                <h3 class="title is-3">Projects</h3>
-            </div>
-
-            <div class="columns is-multiline is-desktop">
-                <!-- Project 1 -->
-                <div class="column">
-                    <div class="box project-text">
-                        <article>
-                            <div>
-                                <figure class="image project-figure">
-                                    <img src="assets/img/project-1.jpg" alt="Image">
-                                </figure>
-                            </div>
-                            <div>
-                                <p>
-                                    They don’t want us to eat. I told you all this before, when you have a swimming
-                                    pool, do not use chlorine, use salt water, the healing, salt water is the healing.
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="column">
-                    <div class="box project-text">
-                        <article>
-                            <div>
-                                <figure class="image project-figure">
-                                    <img src="assets/img/project-2.jpg" alt="Image">
-                                </figure>
-                            </div>
-                            <div>
-                                <p>
-                                    Bless up. Another one. How’s business? Boomin. Don’t ever play yourself. Life is
-                                    what you make it, so let’s make it.
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">My Skills</h3>
+          <div class="skills">
+            <div class="skills__skill">HTML</div>
+            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">React</div>
+            <div class="skills__skill">SASS</div>
+            <div class="skills__skill">GIT</div>
+            <div class="skills__skill">Shopify</div>
+            <div class="skills__skill">Wordpress</div>
+            <div class="skills__skill">Google ADS</div>
+            <div class="skills__skill">Facebook Ads</div>
+            <div class="skills__skill">Android</div>
+            <div class="skills__skill">IOS</div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section> -->
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projekte</span>
+        <span class="heading-sec__sub">
+          <!-- Die folgenden Projekte habe ich alle zusammen mit Mitstudierenden bearbeitet. Die aktuellsten Projekte stehen
+          an oberster Stelle. -->
+        </span>
+      </h2>
 
-    <!-- Social -->
-    <!-- <section id="social" class="section section-3">
-        <div class="container">
-            <div class="has-text-centered">
-                <h3 class="title is-3">Let's Socialize</h3>
-            </div>
-            <div class="social-container columns">
-                <div class="column is-6 has-text-centered">
-                    <a target="_blank" href="https://ca.linkedin.com/in/hassan-ali-6132468a"><img class=""
-                            src="assets/img/linkedin.png"></a>
-                </div>
-                <div class="column is-6 has-text-centered">
-                    <a target="_blank" href="https://www.facebook.com/Hassan.Helfi"><img class=""
-                            src="assets/img/facebook.png"></a>
-                </div>
-            </div>
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/img/visgTitle.jpg" alt="Titelseite Designproben" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Designproben</h3>
+            <p class="projects__row-content-desc">
+              Umsetzung kleinerer Gestaltungsaufgaben zu grundlegegenden Designbereichen.
+            </p>
+            <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Projektdetails</a>
+          </div>
         </div>
-    </section> -->
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/img/mbgTitle.jpg" alt="Login Screen Kirche" class="projects__row-img" loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Build your own Gottesdienst!</h3>
+            <p class="projects__row-content-desc">
+              Entwicklung einer Anwendung zum Erstellen von Onlinegottesdiensten
+              angelehnt an Contextual Design.
+            </p>
+            <a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Projektdetails</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/img/usabilityTitle.jpg" alt="Blender Logo Fusion Logo" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Usability: Blender vs. Fusion 360</h3>
+            <p class="projects__row-content-desc">
+              Vergleich der Gebrauchstauglichkeit zweier CAD - Programme mit Hilfe
+              der Methode des Cognitve Walkthrough und Nutzertests.
+            </p>
+            <a href="./project-3.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Projektdetails</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/img/sopraTitle.jpg" alt="WoStudy?" class="projects__row-img" loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">WoStudy?</h3>
+            <p class="projects__row-content-desc">
+              Entwicklung eines Seriousgame als Webanwendung mit Java, JavaScript und
+              HTML.
+            </p>
+            <a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Projektdetails</a>
+          </div>
+        </div>
+        <!-- <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/img/sopraTitle.jpg" alt="Login Screen Kirche" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Build your own Gottesdienst!</h3>
+            <p class="projects__row-content-desc">
+              Entwicklung einer Anwendung zum Erstellen von Onlinegottesdiensten
+              angelehnt an Contextual Design.
+            </p>
+            <a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- <section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+          tempora explicabo quae quod deserunt eius sapiente
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action="#" class="contact__form">
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="name">Name</label>
+            <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name"
+              id="name" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="email">Email</label>
+            <input required placeholder="Enter Your Email" type="text" class="contact__form-input" name="email"
+              id="email" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="message">Message</label>
+            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message"
+              name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn--theme contact__btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section> -->
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <!-- <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="#">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="#">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="#">
+              <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="#">
+              <img class="main-footer__icon" src="./assets/png/yt-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="#">
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon" />
+            </a>
+          </div>
+        </div> -->
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">Rahel Schneider</h4>
+          <p class="main-footer__short-desc">
+            Studendin Mensch-Computer-Systeme, 5. Semester
+          </p>
+        </div>
+      </div>
 
-    <!-- Footer -->
-    <section class="section-4 has-text-centered container">
-        <p>Rahel Schneider</p>
-    </section>
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        &copy; Copyright 2021. Made by
+        <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Scripts  -->
-    <script src="controller.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
