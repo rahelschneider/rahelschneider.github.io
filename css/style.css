@@ -63,6 +63,18 @@ li {
   list-style: none;
 }
 
+
+
+
+.limy {
+  margin-left: 10px;
+  list-style-type: circle;
+  font-size: 1.8rem;
+  color: grey;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
 input:focus,
 button:focus,
 a:focus,
@@ -227,7 +239,7 @@ textarea {
 }
 
 .sec-pad {
-  padding: 12rem 0;
+  padding: 8rem 0;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -382,7 +394,6 @@ textarea {
 .about__content-details-para {
   font-size: 1.8rem;
   color: grey;
-  max-width: 60rem;
   line-height: 1.7;
   margin-bottom: 1rem;
 }

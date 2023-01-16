@@ -1,6 +1,6 @@
 # Mein Portfolio
 
-## Based on https://github.com/rammcodes/dopefoli
+## Based on https://github.com/rammcodes/dopefolio
 
 
 
